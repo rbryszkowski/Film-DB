@@ -12,7 +12,5 @@ class HomepageController extends AbstractController
       $homepage = file_get_contents('html/index.html');
       return new Response($homepage);
 
-      // $word = 'llama';
-      // return $this->render('homepage/index.html.twig', ['word'=> $word]);
     }
 }
