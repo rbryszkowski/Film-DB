@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <title>Film Database</title>
+  </head>
+
+  <body>
+    <div id="body-wrapper">
+      <div id="film_search">
+        <h3>Search film collection</h3>
+        <div class='form'>
+          <label for="select_search_param">Search by:</label>
+          <select id="select_search_param" name="select_search_param">
+            <option value="film_id">ID</option>
+            <option value="title">Title</option>
+            <option value="genre">Genre</option>
+          </select>
+          &nbsp;
+          <input id="film_search_input">
+          &nbsp;
+          <button id="film_search_btn">Submit</button>
+          <br><br>
+          <button id="show_all_btn">Show all entries</button>
+        </div>
+      </div>
+      <div id="add_film">
+        <h3>Add film to collection</h3>
+        <div class='form'>
+          <label for="film_title">Title</label>
+          <input id="film_title">
+          <br><br>
+          <label for="film_genre">Genre</label>
+          <input id="film_genre">
+          <br><br>
+          <label for="film_desc">Description</label>
+          <input id="film_desc">
+          <br><br>
+          <button id="clear_btn">Clear</button>
+          &nbsp;
+          <button id="add_film_btn">Add</button>
+          &nbsp;<span id="add_film_feedback"></span>
+          <br>
+        </div>
+      </div>
+      <div id="results">
+        <h3>Results</h3>
+        <table id="results_table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Title</th>
+              <th>Genre</th>
+              <th>Description</th>
+              <th colspan="2" id="actions_col">Actions</th>
+           </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <br>
+        <span id="edit_table_feedback"></span>
+      </div>
+    </div>
+    <script src="../js/helper.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

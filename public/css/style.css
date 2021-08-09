@@ -1,0 +1,66 @@
+ * {
+   box-sizing: border-box;
+ }
+
+ html {
+ }
+
+ #body-wrapper {
+   background-color: AntiqueWhite;
+   width: 50vw;
+   height: 80vh;
+   margin-left: 25vw;
+   margin-top: 10vh;
+ }
+
+ #results {
+   overflow-y: scroll;
+ }
+
+ .form {
+   margin-left: 10px;
+ }
+
+ h3 {
+   text-align: center;
+   width: 100%;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   background-color: BurlyWood;
+ }
+
+#results_table {
+  margin: auto;
+  border: 2px solid black;
+  border-collapse: collapse;
+  display: none;
+  text-align: center;
+}
+
+tr, th, td {
+  border: 2px solid black;
+}
+
+td, th {
+  width: 100px;
+  padding: 5px;
+}
+
+.cancel_edit_btn {
+  background-color: red;
+  color: white;
+}
+
+.table_title_input, .table_genre_input, .table_desc_input {
+  width: 100%;
+}
+
+.edit_btn, .delete_btn {
+  width: 100%;
+}
+
+#edit_table_feedback {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
