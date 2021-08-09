@@ -9,7 +9,7 @@
 
     console.log('data for table populate: ', data);
 
-    if (!data) {
+    if (!data.length) {
 
       $('#results_table > tbody').append('<tr><td colspan="6">No results to display</td></tr>');
 
